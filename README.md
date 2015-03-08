@@ -1,63 +1,49 @@
 # Operaciones
 
 package operaciones;
-
 import java.util.*;
 public class Operaciones {
 
    
     public static void main(String[] args) {
-       int a,b,op;
         Scanner lec=new Scanner(System.in);
-       
-        System.out.println("Escribe un numero");
-        a=lec.nextInt();
+        int A,B,C,D,OP;
         
-        System.out.println("Escribe otro numero");
-        b=lec.nextInt();
-        do{
-        System.out.println("seleccione la operacion a realizar");
-        System.out.println("1)Suma \n 2)Resta \n 3)Multiplicacion \n 4)Division \n 5)Modular \n");
-        op=lec.nextInt();
-        /*
-        if(op==1){
-            // suma
-        }else if(op==2){
-            // resta
-        }else if(op==3){
-            // multiplicacion
-        }else if(op==4){
-            // division
-        }else if(op==5){
-            // modular
-        }*/
+        System.out.println("Introduzca dos numeros");
+        System.out.println("");
+        System.out.println("Introduzca el primer nuemro");
+        A=lec.nextInt();
+        System.out.println("Introduzca el segundo nuemro");
+        B=lec.nextInt();
         
-        switch(op){
-            case 1:
-                System.out.println("Suma");
-                System.out.println(a+b);
-                break;
-            case 2:
-                System.out.println("Resta");
-                System.out.println(a-b);
-                break;
-            case 3:
-                System.out.println("Multiplicacion");
-                System.out.println(a*b);
-                break;
-            case 4:
-                System.out.println("Division");
-                System.out.println(a/b);
-                break;
-            case 5:
-                System.out.println("Modular");
-                System.out.println(a%b);
-                break;
-            default:
-                System.out.println("La opcion es incorrecta");
-                break;
+        System.out.println("Operacion a realizar");
+        System.out.println("1)Sumar");
+        System.out.println("2)Restar");
+        System.out.println("3)Multiplicar");
+        System.out.println("4)Dividir");
+        System.out.println("5)Modular");
+        System.out.println("que operacion desea realizar");
+        OP=lec.nextInt();
+        C=A+B;
+        D=A-B;
+        if(OP==1){
+            System.out.println(A+" + "+B+" = "+C);    
         }
-    }while(op>5);
+        if(OP==2){
+            System.out.println(A+" - "+B+" = "+D);   
+        }
+        if(OP==3){
+            System.out.println(A+" * "+B+" = "+A*B);
+        }
+        if(OP==4){
+            System.out.println(A+" / "+B+" = "+A/B);
+        }   
+        if(OP==5){
+            System.out.println(A+" % "+B+" = "+A%B);
+        }
+        
         
     }
+    
 }
+
